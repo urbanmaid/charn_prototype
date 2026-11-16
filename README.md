@@ -1,6 +1,6 @@
 # Charming Illusion
 
-<img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />4
+<img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />
 
 **캐릭터 전환과 AI 동료 지휘를 결합한 PC 싱글플레이 전술 액션 TPS**
 
