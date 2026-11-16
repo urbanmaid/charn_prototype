@@ -1,6 +1,7 @@
 # Charming Illusion
 
-<img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />
+<img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />4
+
 **캐릭터 전환과 AI 동료 지휘를 결합한 PC 싱글플레이 전술 액션 TPS**
 
 플레이어가 직접 조준하고 사격하면서, 서로 다른 능력을 가진 캐릭터로 전환하고 AI 동료와 함께 임무를 수행하는 Unity 졸업 프로젝트입니다. 히어로 슈터의 캐릭터별 역할과 분대 전술을 하나의 전투 흐름으로 연결하는 것을 목표로 개발했습니다.
