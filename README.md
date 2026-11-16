@@ -1,4 +1,4 @@
-# Charming Illusion
+<img width="1920" height="1080" alt="airstrike" src="https://github.com/user-attachments/assets/6c3f7148-cb14-42a2-9fc5-bf5ebcf8c401" /><img width="2560" height="1440" alt="gameplay" src="https://github.com/user-attachments/assets/a30772ad-7a6b-45b1-8923-27de9f8adb8e" /># Charming Illusion
 
 <img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />
 **캐릭터 전환과 AI 동료 지휘를 결합한 PC 싱글플레이 전술 액션 TPS**
@@ -22,8 +22,7 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 
 주요 임무인 **반달리즘 저지**에서는 교량과 건물 구역을 이동하며 교전하고, 장비 확보와 조건부 상호작용을 통해 목표를 진행합니다. 공습으로 인한 교량 붕괴와 미션 전환을 실제 플레이 공간에 연결했습니다.
 
-![인게임 플레이 화면](Docs/Images/readme/gameplay.png)
-
+<img width="2560" height="1440" alt="gameplay" src="https://github.com/user-attachments/assets/0cb4ed47-e3c4-4d06-b0c6-a092eda52474" />
 ## 주요 기능
 
 - **캐릭터 전환과 분대 지휘**: 캐릭터의 페르소나·위치·체력·탄약 및 지원되는 실행 상태를 교환하고, 분대 명령을 동료의 추종·전투 행동에 연결합니다.
@@ -47,7 +46,7 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 
 | 실제 인게임의 공습과 교량 붕괴 | 연습장의 피오나 스킬 효과 |
 | --- | --- |
-| ![공습과 교량 붕괴](Docs/Images/readme/airstrike.png) | ![까마귀 보호막](Docs/Images/readme/fiona-skill.png) |
+| !<img width="1920" height="1080" alt="airstrike" src="https://github.com/user-attachments/assets/12f2f33a-c5ce-46f4-a9eb-1873f20e0c4f" /> | !<img width="1920" height="1080" alt="fiona-skill" src="https://github.com/user-attachments/assets/85d47a95-34e8-4aee-94a0-aeb23de9d5f5" /> |
 
 ## 구현 구조
 
