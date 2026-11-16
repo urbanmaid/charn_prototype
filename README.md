@@ -6,7 +6,7 @@
 
 플레이어가 직접 조준하고 사격하면서, 서로 다른 능력을 가진 캐릭터로 전환하고 AI 동료와 함께 임무를 수행하는 Unity 졸업 프로젝트입니다. 히어로 슈터의 캐릭터별 역할과 분대 전술을 하나의 전투 흐름으로 연결하는 것을 목표로 개발했습니다.
 
-[프로젝트 자료 · Notion](https://app.notion.com/p/QR-41aa5a9966be803cb45adb4af34fe7fd?source=copy_link#41aa5a9966be80e1bec7fb6ba8857832) · [실행 방법](#실행-방법) · [팀 구성](#팀-구성)
+[소개 영상 · YouTube](https://www.youtube.com/watch?v=0FUcPMz2ZRw) · [프로젝트 자료 · Notion](https://app.notion.com/p/QR-41aa5a9966be803cb45adb4af34fe7fd?source=copy_link#41aa5a9966be80e1bec7fb6ba8857832) · [실행 방법](#실행-방법) · [팀 구성](#팀-구성)
 
 | 구분 | 내용 |
 | --- | --- |
