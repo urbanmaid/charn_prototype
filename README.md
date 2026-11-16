@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="airstrike" src="https://github.com/user-attachments/assets/6c3f7148-cb14-42a2-9fc5-bf5ebcf8c401" /><img width="2560" height="1440" alt="gameplay" src="https://github.com/user-attachments/assets/a30772ad-7a6b-45b1-8923-27de9f8adb8e" /># Charming Illusion
+# Charming Illusion
 
 <img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />
 **캐릭터 전환과 AI 동료 지휘를 결합한 PC 싱글플레이 전술 액션 TPS**
