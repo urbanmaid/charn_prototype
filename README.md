@@ -46,7 +46,7 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 
 | 실제 인게임의 공습과 교량 붕괴 | 연습장의 피오나 스킬 효과 |
 | --- | --- |
-| !<img width="1920" height="1080" alt="airstrike" src="https://github.com/user-attachments/assets/12f2f33a-c5ce-46f4-a9eb-1873f20e0c4f" /> | !<img width="1920" height="1080" alt="fiona-skill" src="https://github.com/user-attachments/assets/85d47a95-34e8-4aee-94a0-aeb23de9d5f5" /> |
+| <img width="1920" height="1080" alt="airstrike" src="https://github.com/user-attachments/assets/12f2f33a-c5ce-46f4-a9eb-1873f20e0c4f" /> | <img width="1920" height="1080" alt="fiona-skill" src="https://github.com/user-attachments/assets/85d47a95-34e8-4aee-94a0-aeb23de9d5f5" /> |
 
 ## 구현 구조
 
