@@ -1,5 +1,7 @@
 # Charming Illusion
 
+> **공개 범위:** 이 저장소는 팀에서 공개에 동의한 C# 소스 237개와 대응 `.meta`를 선별한 포트폴리오입니다. 외부 유료 에셋 원본, 원본 구현이 섞인 기반 코드, 씬·프리팹·패키지·프로젝트 설정은 포함하지 않습니다. **이 저장소만으로 전체 게임을 빌드할 수 없습니다.** 아래 실행 안내는 전체 개발 프로젝트 보유자를 위한 설명입니다. [공개 범위 상세](PUBLICATION.md)
+
 <img width="2456" height="802" alt="logo" src="https://github.com/user-attachments/assets/cfb059cd-8fc0-4caa-b04d-db941c23eda1" />
 
 **캐릭터 전환과 AI 동료 지휘를 결합한 PC 싱글플레이 전술 액션 TPS**
@@ -58,7 +60,7 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 | 캐릭터 적용 | [`PersonaBehavior`](Assets/Scripts/PersonaBehavior.cs), [`PersonaData`](Assets/Scripts/Skills/PersonaData.cs) | 외형·능력치·무기·스킬 설정을 런타임 개체에 적용 |
 | 스킬 실행 | [`SkillBehavior`](Assets/Scripts/Skills/SkillBehavior.cs), [`PersonaDataSkill`](Assets/Scripts/Skills/PersonaDataSkill.cs) | 슬롯·쿨다운·포인트 검사와 효과 실행, 장착·해제 처리 |
 | 조종 전환 | [`AllySquadManager`](Assets/Scripts/AllyFSM/AllySquadManager.cs) | 조종 캐릭터와 동료의 페르소나·위치·상태 교환 |
-| 전투 판단 | [`StateController`](Assets/Scripts/Core/Enemy/EnemyScripts/StateController.cs) | 관측·표적·이동·엄폐 및 행동 전이 관리 |
+| 전투 판단 | `StateController` (공개 제외) | 관측·표적·이동·엄폐 및 행동 전이 관리 |
 | 미션 진행 | [`StageMissionRuntime`](Assets/Scripts/Missions/StageMissionRuntime.cs), [`StageMissionDirector`](Assets/Scripts/Missions/StageMissionDirector.cs) | 목표 평가와 장면 내 적·상호작용·진행 연결 |
 | 저장과 복원 | [`CheckpointTransaction`](Assets/Scripts/Missions/CheckpointTransaction.cs), [`StageResumeCoordinator`](Assets/Scripts/Missions/StageResumeCoordinator.cs) | 저장 후보와 확정 상태 구분, 월드 복원과 실패 처리 |
 | 스테이지 초기화 | [`StageSceneInitializer`](Assets/Scripts/StageSceneInitializer.cs) | 선택된 스테이지의 배경·미션 개체 생성 및 시작 위치 연결 |
@@ -79,16 +81,16 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 | 데이터 및 저장 | ScriptableObject / Prefab / JSON 로컬 파일 |
 | 협업 | Unity Version Control |
 
-버전 기준은 [`ProjectVersion.txt`](ProjectSettings/ProjectVersion.txt)와 [`Packages/manifest.json`](Packages/manifest.json)입니다.
+버전 기준은 `ProjectVersion.txt` (공개 제외)와 `Packages/manifest.json` (공개 제외)입니다.
 
 ## 실행 방법
 
-### Unity Editor에서 실행
+### Unity Editor에서 실행 (전체 개발 프로젝트 보유자용)
 
 1. Unity Hub에 **Unity `6000.4.0f1`**을 설치합니다. Windows 실행 파일을 빌드하려면 해당 플랫폼의 Build Support도 준비합니다.
-2. 이 저장소를 내려받고, Unity Hub에서 `Assets`, `Packages`, `ProjectSettings`가 있는 프로젝트 루트를 추가합니다.
+2. 비공개 기반 소스와 외부 에셋을 포함한 전체 개발 프로젝트를 준비한 뒤, Unity Hub에서 `Assets`, `Packages`, `ProjectSettings`가 있는 프로젝트 루트를 추가합니다.
 3. 패키지 복원과 에셋 임포트가 끝날 때까지 기다립니다. 컴파일 오류와 누락된 에셋 참조가 없는지 확인합니다.
-4. [`Assets/Scenes/Outgame/Menu.unity`](Assets/Scenes/Outgame/Menu.unity)를 열고 Play를 실행합니다.
+4. `Assets/Scenes/Outgame/Menu.unity` (공개 제외)를 열고 Play를 실행합니다.
 5. 메뉴에서 저장 슬롯과 준비된 스테이지를 선택해 게임을 시작합니다.
 
 **일반 플레이는 메뉴 씬에서 시작합니다.** `MainGameplay`는 선택한 스테이지 데이터를 받아 배경과 미션 개체를 생성하는 공용 씬입니다. 이 씬만 단독 실행하면 스테이지 선택 정보나 fallback 설정이 없어 맵이 생성되지 않을 수 있습니다.
@@ -97,9 +99,9 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 
 메뉴의 캐릭터 도감을 통해 진입하거나, 아래 씬을 열어 스킬을 확인할 수 있습니다.
 
-- [루시아 연습장](Assets/Scenes/Test/LuciaSkillTest.unity)
-- [아멜리아 연습장](Assets/Scenes/Test/AmeliaSkillTest.unity)
-- [피오나 연습장](Assets/Scenes/Test/FionaSkillTest.unity)
+- 루시아 연습장 (공개 제외)
+- 아멜리아 연습장 (공개 제외)
+- 피오나 연습장 (공개 제외)
 
 연습장에는 쿨다운 초기화·게임 체인저 포인트 충전·피격 시험 등의 테스트 기능이 있습니다. `F6`으로 테스트 안내를 표시하거나 숨길 수 있으며, `Esc`로 일시정지와 메뉴 복귀를 사용할 수 있습니다.
 
@@ -123,9 +125,11 @@ AI 동료가 기본적인 이동과 전투를 담당하고, 플레이어는 직�
 | `C` 길게 누르기 + 마우스 휠 | 조종 전환 대상 선택, 키를 놓아 확정 |
 | `Esc` | 일시정지 |
 
-기본 키는 [`PlayerControls.inputactions`](Assets/Resources/Controls/PlayerControls.inputactions)와 조종 전환 코드를 기준으로 정리했습니다. 상세 조작은 게임 내 조작 안내와 현재 입력 설정을 확인할 수 있습니다.
+기본 키는 `PlayerControls.inputactions` (공개 제외)와 조종 전환 코드를 기준으로 정리했습니다. 상세 조작은 게임 내 조작 안내와 현재 입력 설정을 확인할 수 있습니다.
 
 ## 프로젝트 구조
+
+아래는 전체 개발 프로젝트의 구조이며, 이 저장소에는 그중 선별한 코드만 포함합니다.
 
 ```text
 Assets/
@@ -169,9 +173,26 @@ Docs/                # 작업 기록과 기능 설명
 - **UI 및 편의 기능**: 캐릭터 도감과 PA관리 메뉴 연결, 연습장·일시정지 기능 보완
 - **기획 참여**: 레퍼런스 게임 분석 및 프로젝트와의 비교
 
+### 박세웅 세부 구현
+
+- **아군·적군 FSM**
+    - 공통 전투 실행 구조의 확장, 관측·기억·표적 재선택, 엄폐 평가와 재배치, 접근 전 장전·탄창 반격·추종 복귀 구현
+- **인게임 페르소나 적용**
+    - 팀원 제작 데이터·모델을 전투 개체에 연결, 생존 외형·래그돌 전환, 부위 히트박스와 플레이어·아군별 총기 파지 설정
+- **조종 전환 및 분대 기능 통합**
+    - 페르소나·위치·체력·탄약의 교환과 초기화 순서 보완, 스킬·가젯 상태 보존, 빈사 자동 교환, 실제 공통 FSM에 집결·산개 및 교전 복귀 연결
+- **미션·저장 시스템**
+    - 목표 유형별 평가와 행동 기록, 미션 순차 진행, 체크포인트 트랜잭션, 월드 스냅샷과 저장 실패·복구 처리, 승패와 결과 데이터 연결
+- **레벨 디자인 관련 작업**
+    - 기존 배경의 적·순찰·목표·체크포인트 배치와 연결, 반달리즘 저지 임무 구성, 키 회수 작업의 자유 순서 목표와 저장 연동
+- **기능 통합·검증·최적화**
+    - 메뉴 진입부터 교환·전투·재개까지의 통합 검사, 상태 경합과 조준·엄폐 오류 수정, 엄폐 탐색 범위 제한과 물리 질의 할당 개선
+
+페르소나 인터페이스와 캐릭터 모델, 스킬 및 전투 연출은 팀원의 제작 기반을 사용하였다. 집결·산개와 조종 전환도 공동 작업으로, 기존 기능의 제작과 실제 공통 FSM에 맞춘 연결·상태 보존·검증을 구분한다. 외부 TPS 에셋의 기본 이동·사격·FSM 전체를 독자 제작한 것으로 포함하지 않는다.
+
 ## 개발 상태
 
-현재는 직접 전투·캐릭터 스킬·동료 운용·미션 진행을 연결한 프로토타입입니다. 후속 작업은 전투와 저장 경로의 안정화, 목표 이용자 플레이테스트 및 콘텐츠 보강에 두고 있습니다.
+현재는 직접 전투·캐릭터 스킬·동료 운용·미션 진행을 연결한 프로토타입입니다. 후속 작업은 인게임 프레임 개선, 전투와 저장 경로의 안정화, 목표 이용자 플레이테스트 및 콘텐츠 보강에 두고 있습니다.
 
 - 근접 사격 시 무기와 몸·벽의 시각적 관통, 장애물 주변 사격 판정을 추가 점검합니다.
 - 다수 개체가 동시에 관측·엄폐 탐색을 수행하는 교전 조건의 성능을 확인합니다.
